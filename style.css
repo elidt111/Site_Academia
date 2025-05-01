@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root{
-    --main-color: #ffe927;
+    --main-color: #b2d12e;
     --black: #13131a;
     --bg: #010103;
     --border: 0.1rem solid rgba(255,255,255,0.3);
@@ -91,6 +91,7 @@ section{
 .content h3{
     color: #fff;
     font-size: 6rem;
+    text-transform: none;
 }
 .content p{
     color: #fff;
@@ -98,6 +99,7 @@ section{
     font-weight: 100;
     line-height: 1.8;
     padding: 1rem 0;
+    text-transform: none;
 }
 .title{
     font-size: 4rem;
@@ -112,7 +114,7 @@ section{
     gap: 1.5rem;
 }
 .about .row .content{
-    padding: 2rem;
+    padding: 1.5rem;
 }
 .about .row .content h3{
     font-size: 3rem;
@@ -136,7 +138,7 @@ section{
     cursor: pointer;
 }
 .assinaturas .boxcontainer .box img{
-    height: 10rem;
+    height: 40rem;
 }
 .assinaturas .boxcontainer .box h3{
     color: #fff;
@@ -148,11 +150,22 @@ section{
     font-size: 2.5rem;
     padding: 0,5rem 0;
 }
+.assinaturas .boxcontainer .box .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
 .assinaturas .boxcontainer .box:hover{
     background-color: #fff;
 }
 .assinaturas .boxcontainer .box:hover>*{
     color: var(--black);
+}
+.centralizada{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem; 
 }
 .review .boxcontainer .box{
     border: var(--border);
@@ -171,6 +184,7 @@ section{
     padding: 2rem 0;
     line-height: 1.8;
     font-weight: lighter;
+    text-transform: none;
 }
 .review .boxcontainer .box .user{
     height: 7rem;
@@ -191,9 +205,18 @@ section{
 .footer .share img{
     margin: 0.3rem;
     cursor: pointer;
-    border-radius: 50%;
+    border-radius: 40%;
     padding: 1rem;
 }
 .footer .share img:hover{
     background-color: var(--main-color);
+    transform: translateY(-10px);
 }
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #777;
+  }
